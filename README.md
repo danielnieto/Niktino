@@ -1,6 +1,6 @@
 #Niktino 2D Game Engine
 
-This is a 2d Game Engine written in Java with OpenGL acceleration using LWJGL library for this purpose.
+This is a 2-dimensional Game Engine written in Java with OpenGL acceleration using LWJGL library for this purpose.
 
 ------------------------
 
@@ -20,9 +20,9 @@ At this point, you have successfully created a resource based on the path you've
 
 	nuevoJuego.agregarRecurso(nuevoRecurso,0,0);
 
-with this code, you're telling the game to add nuevoRecurso resource at the given position, in this case is 0,0 which is the bottom-left corner of the screen.\
+with this code, you're telling the game to add nuevoRecurso resource at the given position, in this case is 0,0 which is the bottom-left corner of the screen.
 
-###-At last but not least, you might want to create the Game Loop, from this method you'll refresh the game and execute all the logic behind your game, there is quite a few of standard Game Loops but i'll show you the easier:
+###-At last but not least, you might want to create the Game Loop, from this method you'll refresh the game and execute all the logic behind it, there are quite a few standard Game Loops but i'll show you the easiest one:
 
 	 private static void loopPrincipal() {
          while(true){
@@ -33,4 +33,4 @@ with this code, you're telling the game to add nuevoRecurso resource at the give
     }
 
 
-This snippet will work as a game loop, you will need to call it right before the initialization of your game. You may also want to add all the logic inside that loop, be careful though to call "actualizar" method at the end of the loop, otherwise your game may not detect peripherall inputs.
+This snippet will work as a game loop, you will need to call it right after the initialization of your game. You may also want to add all the logic inside that loop, be careful though to call "actualizar" method at the end of the loop, otherwise your game may not detect peripherall inputs.
